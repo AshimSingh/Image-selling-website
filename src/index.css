@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.body {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: underline 5px rgb(10, 102, 102);;
+}
+.boxModel{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    width: 100%;
+    /* height: 20%; */
+    /* height: 500px; */
+}
+.myCard{
+    width: 35%;
+    box-shadow: 5px 5px 8px #888888 ;
+}
+.myCard >img{
+    width: 100%;
+    height: 55%;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+    
+}
+.mybutton{
+    display: flex;
+    justify-content: center;
+}
+.myTitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.author{
+    font-size: 20px;
+    font-weight: 700;
+}
+.price{
+    background-color: rgba(180, 237, 237, 0.619);
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(10, 102, 102);
+    padding: 0px 15px;
+    letter-spacing: 2px;
+}
+.seeMore_btn{
+    background-color: transparent;
+    border: none;
+    color: rgb(6, 140, 140);
 }
