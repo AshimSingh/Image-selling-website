@@ -53,7 +53,7 @@ const Data = ()=>{
     return(
         <>
             {/* <h1>Data fetch complete</h1> */}
-            <Images listImage={imageList} notInterested={}></Images>
+            <Images listImage={imageList} notInterested={notInterested}></Images>
         </>
     )
 }
