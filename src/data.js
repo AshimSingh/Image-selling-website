@@ -49,7 +49,18 @@ const Data = ()=>{
             </main>
         )
     }
-   
+   else if(imageList.length===0){
+        return(
+            <>
+                <div className="boxModel">
+                    <div class="d-flex flex-column">
+                        <h1>Couldn't Load More Data</h1>
+                        <button type="button" class="btn btn-primary" onClick={()=>fetchimage()}>Load more</button>
+                    </div>
+                </div>
+            </>
+        )
+   }
     return(
         <>
             {/* <h1>Data fetch complete</h1> */}
