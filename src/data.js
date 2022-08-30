@@ -16,7 +16,10 @@ const Data = ()=>{
             setIsLoading(false)
             console.log(error)
         }
-        
+        }
+        const notInterested=(id)=>{
+            const newList = imageList.filter((data)=> data.id !==id)
+            setImageList(newList)
         }
     
     useEffect(()=>{
@@ -46,10 +49,11 @@ const Data = ()=>{
             </main>
         )
     }
+   
     return(
         <>
             {/* <h1>Data fetch complete</h1> */}
-            <Images listImage={imageList}></Images>
+            <Images listImage={imageList} notInterested={}></Images>
         </>
     )
 }

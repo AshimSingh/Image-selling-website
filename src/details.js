@@ -1,7 +1,7 @@
 
 import ImgCard from "./card";
 
-const Images = ({listImage})=>{
+const Images = ({listImage,notInterested})=>{
     return(
         <>
             <div className='title'>
@@ -11,7 +11,7 @@ const Images = ({listImage})=>{
                 
                 listImage.map((list)=>{
                     return(
-                        <ImgCard key={list.id} {...list}></ImgCard>
+                        <ImgCard key={list.id} {...list} notInterested={notInterested}></ImgCard>
                     )
                 })
             }
